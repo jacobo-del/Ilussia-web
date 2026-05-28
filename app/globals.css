@@ -67,3 +67,56 @@ body {
 .glow-blue {
   box-shadow: 0 0 40px rgba(37, 99, 235, 0.15);
 }
+
+/* ─── Landing v3 animations ─── */
+
+/* Ticker marquee */
+@keyframes ticker {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.ticker-track {
+  display: flex;
+  white-space: nowrap;
+  animation: ticker 30s linear infinite;
+}
+
+/* Animated gradient text (hero "PAGUEN") */
+@keyframes gradient-shift {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+.animated-gradient-text {
+  background: linear-gradient(90deg, #7C3AED, #2563EB, #10B981, #7C3AED);
+  background-size: 300% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  animation: gradient-shift 3s linear infinite;
+}
+
+/* CTA subtle pulse */
+@keyframes cta-pulse-anim {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.02); }
+}
+.cta-pulse {
+  animation: cta-pulse-anim 2.5s ease-in-out infinite;
+}
+
+/* VSL glow border */
+@keyframes border-glow {
+  0%, 100% { background-position: 0% 50%; }
+  50%       { background-position: 100% 50%; }
+}
+.video-glow-border {
+  background: linear-gradient(135deg, #7C3AED, #2563EB, #7C3AED);
+  background-size: 200% 200%;
+  animation: border-glow 3s ease infinite;
+}
+
+/* Cualificador particles */
+@keyframes float-particle {
+  0%, 100% { transform: translateY(0px) scale(1); opacity: 0.15; }
+  50%       { transform: translateY(-18px) scale(1.15); opacity: 0.35; }
+}

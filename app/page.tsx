@@ -1,30 +1,49 @@
-import Navbar from "@/components/Navbar";
-import Hero from "@/components/Hero";
-import Vsl from "@/components/Vsl";
-import Problema from "@/components/Problema";
-import Solucion from "@/components/Solucion";
-import Metricas from "@/components/Metricas";
-import PruebaSocial from "@/components/PruebaSocial";
-import CasoMonreve from "@/components/CasoMonreve";
-import ComoFunciona from "@/components/ComoFunciona";
-import Servicios from "@/components/Servicios";
-import CtaFinal from "@/components/CtaFinal";
-import Footer from "@/components/Footer";
+import Header       from "@/components/landing/Header";
+import Hero         from "@/components/landing/Hero";
+import Ticker       from "@/components/landing/Ticker";
+import Dolor        from "@/components/landing/Dolor";
+import Sistema      from "@/components/landing/Sistema";
+import PruebaTecnica from "@/components/landing/PruebaTecnica";
+import CasoMonreve  from "@/components/landing/CasoMonreve";
+import MetaAds      from "@/components/landing/MetaAds";
+import Vsl          from "@/components/landing/Vsl";
+import Cualificador from "@/components/landing/Cualificador";
+import CtaFinal     from "@/components/landing/CtaFinal";
+import Footer       from "@/components/landing/Footer";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <Header />
       <main>
+        {/* S1 — HERO: fusión clínica + tech */}
         <Hero />
-        <Vsl />
-        <Problema />
-        <Solucion />
-        <Metricas />
-        <PruebaSocial />
+
+        {/* S2 — TICKER animado */}
+        <Ticker />
+
+        {/* S3 — EL DOLOR: mundo clínica */}
+        <Dolor />
+
+        {/* S4 — EL SISTEMA: mundo tech */}
+        <Sistema />
+
+        {/* S5 — PRUEBA TÉCNICA: datos reales */}
+        <PruebaTecnica />
+
+        {/* S6 — CASO MONREVE: mundo clínica */}
         <CasoMonreve />
-        <ComoFunciona />
-        <Servicios />
+
+        {/* S7 — META ADS: especialidad */}
+        <MetaAds />
+
+        {/* S8 — VSL: mundo clínica */}
+        <Vsl />
+
+        {/* S9 — PRE-CUALIFICADOR: tech / filtro */}
+        <Cualificador />
+
+        {/* S10 — CTA FINAL ÉPICO */}
         <CtaFinal />
       </main>
       <Footer />
