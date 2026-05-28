@@ -52,11 +52,11 @@ export default function Navbar() {
             >
               <Image
                 src="/logo-ilussia.png"
-                height={32}
-                width={120}
+                height={28}
+                width={110}
                 alt="IlussIA"
                 className="object-contain"
-                style={{ mixBlendMode: "screen" }}
+                style={{ maxHeight: "28px", width: "auto", mixBlendMode: "screen" }}
                 priority
               />
             </button>

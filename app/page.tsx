@@ -4,6 +4,7 @@ import Vsl from "@/components/Vsl";
 import Problema from "@/components/Problema";
 import Solucion from "@/components/Solucion";
 import Metricas from "@/components/Metricas";
+import PruebaSocial from "@/components/PruebaSocial";
 import CasoMonreve from "@/components/CasoMonreve";
 import ComoFunciona from "@/components/ComoFunciona";
 import Servicios from "@/components/Servicios";
@@ -20,6 +21,7 @@ export default function Home() {
         <Problema />
         <Solucion />
         <Metricas />
+        <PruebaSocial />
         <CasoMonreve />
         <ComoFunciona />
         <Servicios />
