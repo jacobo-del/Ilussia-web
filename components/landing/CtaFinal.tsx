@@ -125,7 +125,7 @@ export default function CtaFinal() {
           transition={{ delay: 0.5 }}
           className="text-white/50 text-sm mt-6"
         >
-          ilussIA · Guatemala y España · Respondemos en menos de 2 horas
+          ilussIA · Latinoamérica y España · Respondemos en menos de 2 horas
         </motion.p>
       </div>
     </section>

@@ -16,9 +16,9 @@ import {
 const nodes = [
   { icon: Megaphone, label: "Meta Ads", sub: "Facebook e Instagram", color: "#F59E0B", badge: null },
   { icon: MessageCircle, label: "WhatsApp", sub: "Lead llega directo", color: "#10B981", badge: null },
-  { icon: Bot, label: "Sofía IA", sub: "Responde en < 2 min", color: "#7C3AED", badge: "El núcleo" },
+  { icon: Bot, label: "Agente IA", sub: "Responde en < 2 min", color: "#7C3AED", badge: "El núcleo" },
   { icon: Filter, label: "Calificación", sub: "Score automático", color: "#2563EB", badge: null },
-  { icon: Database, label: "CRM Kommo", sub: "Pipeline organizado", color: "#10B981", badge: null },
+  { icon: Database, label: "CRM", sub: "Pipeline organizado", color: "#10B981", badge: null },
   { icon: CalendarCheck, label: "Cita confirmada", sub: "Tu equipo cierra", color: "#22C55E", badge: null },
 ];
 
@@ -190,7 +190,7 @@ export default function Sistema() {
           className="mt-14 glass-card rounded-2xl p-6 md:p-8 text-center border border-[#7C3AED]/15"
         >
           <p className="text-slate-400 text-base md:text-lg leading-relaxed">
-            Sofía gestiona el primer contacto{" "}
+            El sistema gestiona el primer contacto{" "}
             <span className="text-white font-bold">24/7</span>. Tu equipo recibe solo leads
             listos para cerrar.{" "}
             <span className="text-[#10B981] font-semibold">

@@ -24,7 +24,7 @@ const cards = [
     badge: "N8N Automation",
     title: "Automatización en 1.72 segundos",
     description:
-      "De Kommo a Meta CAPI en tiempo real. Cada lead procesado, hasheado y enviado al algoritmo automáticamente.",
+      "De tu CRM a Meta CAPI en tiempo real. Cada lead procesado, hasheado y enviado al algoritmo automáticamente.",
     stat: "100% sin intervención humana",
     image: "/pruebas/n8n-flujo.png",
     imageAlt: "N8N Automation Flow",

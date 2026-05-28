@@ -57,7 +57,7 @@ const before = [
 ];
 
 const after = [
-  "Sofía responde en < 2 min, 24/7",
+  "El agente responde en < 2 min, 24/7",
   "Cada lead entra al CRM automáticamente",
   "Agenda 85-90% ocupada consistentemente",
   "Dashboard en tiempo real por canal",
@@ -98,12 +98,22 @@ export default function CasoMonreve() {
           viewport={{ once: true, margin: "-80px" }}
           className="text-center mb-14"
         >
+          {/* Logo cliente */}
+          <div className="flex justify-center mb-6">
+            <Image
+              src="/clientes/monreve.png"
+              alt="Mon Rêve Centro Estético"
+              width={140}
+              height={70}
+              className="object-contain opacity-80 brightness-0 invert"
+            />
+          </div>
           <p className="text-[#10B981] text-sm font-semibold tracking-wider uppercase mb-3">
             Caso de éxito
           </p>
           <h2 className="text-4xl md:text-5xl font-black text-white leading-tight">
-            Monreve — Centro de Belleza
-            <br className="hidden md:block" /> y Estética, Guatemala
+            Mon Rêve — Centro Estético
+            <br className="hidden md:block" /> Guatemala
           </h2>
         </motion.div>
 
@@ -179,10 +189,11 @@ export default function CasoMonreve() {
         >
           <div className="text-5xl text-[#7C3AED] leading-none mb-4 font-serif">"</div>
           <p className="text-slate-300 text-base md:text-lg leading-relaxed mb-4">
-            Antes perdíamos clientes todos los días porque no podíamos responder rápido.
-            Con ilussIA la agenda se llena sola.
+            Cambiamos por completo cómo captamos clientes. Ahora sabemos qué anuncio trae
+            a cada persona que paga, el sistema atiende al instante, y aunque siempre hay
+            curiosos, nuestro equipo ya no pierde el día respondiéndoles.
           </p>
-          <p className="text-slate-500 text-sm font-semibold">— Monreve, Guatemala</p>
+          <p className="text-slate-500 text-sm font-semibold">— Mon Rêve, Centro Estético · Guatemala</p>
         </motion.div>
 
         {/* CTA */}

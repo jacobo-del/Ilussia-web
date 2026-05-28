@@ -3,7 +3,7 @@ const items = [
   "Meta Ads",
   "IA 24/7",
   "ROAS 4.05x",
-  "CRM Kommo",
+  "CRM",
   "Pacientes Premium",
   "N8N Automation",
   "606 Conversiones",

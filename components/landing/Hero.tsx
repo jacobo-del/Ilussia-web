@@ -61,7 +61,7 @@ export default function Hero() {
             style={{ background: "linear-gradient(135deg, #7C3AED, #2563EB)" }}
           >
             <div className="rounded-full bg-[#080B14] px-4 py-2 text-sm font-semibold tracking-wider uppercase text-[#A78BFA]">
-              ✦ Sistema de Adquisición para Centros de Belleza Premium · Guatemala &amp; España ✦
+              ✦ Motor de Adquisición para Centros de Belleza y Estética Premium ✦
             </div>
           </div>
         </motion.div>
