@@ -100,13 +100,12 @@ export default function CasoMonreve() {
         >
           {/* Logo cliente */}
           <div className="flex justify-center mb-6">
-            <Image
-              src="/clientes/monreve.png"
-              alt="Mon Rêve Centro Estético"
-              width={140}
-              height={70}
-              className="object-contain opacity-80 brightness-0 invert"
-            />
+            <p className="text-2xl font-light tracking-[0.3em] text-white/80 uppercase text-center">
+              Mon Rêve
+              <span className="block text-xs tracking-widest text-slate-400 mt-1">
+                Centro Estético
+              </span>
+            </p>
           </div>
           <p className="text-[#10B981] text-sm font-semibold tracking-wider uppercase mb-3">
             Caso de éxito
