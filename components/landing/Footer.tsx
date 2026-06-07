@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const WA =
   "https://wa.me/50232421865?text=Hola,%20quiero%20saber%20si%20mi%20centro%20califica%20para%20ilussIA";
@@ -47,7 +48,17 @@ export default function Footer() {
           />
         </button>
 
-        <p className="text-slate-600 text-sm">© 2025 ilussIA · Guatemala</p>
+        <div className="flex flex-col items-center gap-1">
+          <p className="text-slate-600 text-sm">© 2025 ilussIA · Guatemala</p>
+          <div className="flex gap-4">
+            <Link href="/privacidad" className="text-slate-700 hover:text-slate-400 text-xs transition-colors">
+              Privacidad
+            </Link>
+            <Link href="/terminos" className="text-slate-700 hover:text-slate-400 text-xs transition-colors">
+              Términos
+            </Link>
+          </div>
+        </div>
 
         <div className="flex items-center gap-3">
           {[

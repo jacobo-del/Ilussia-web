@@ -1,0 +1,251 @@
+/* Legal pages — all styles scoped under .legal-page to avoid conflicts with root layout */
+
+.legal-page {
+  --bg: #0a0c12;
+  --surface: #10131d;
+  --border: #1e2235;
+  --accent: #c8a96e;
+  --accent-dim: rgba(200, 169, 110, 0.12);
+  --text: #e8e6e0;
+  --text-muted: #7a7d8a;
+
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-dm-sans, "DM Sans"), sans-serif;
+  font-size: 15px;
+  line-height: 1.8;
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Grain overlay */
+.legal-page::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)' opacity='0.04'/%3E%3C/svg%3E");
+  pointer-events: none;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+.legal-page header {
+  position: relative;
+  z-index: 1;
+  border-bottom: 1px solid var(--border);
+  padding: 2rem 0;
+}
+
+.legal-page .container {
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.legal-page .logo-bar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.legal-page .logo-mark {
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--accent);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-cormorant, "Cormorant Garamond"), serif;
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-weight: 600;
+  letter-spacing: 0.05em;
+}
+
+.legal-page .logo-name {
+  font-family: var(--font-cormorant, "Cormorant Garamond"), serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--text);
+}
+
+.legal-page .hero {
+  padding: 5rem 0 3rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+
+.legal-page .label {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 500;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.legal-page h1 {
+  font-family: var(--font-cormorant, "Cormorant Garamond"), serif;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  font-weight: 300;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 1.5rem;
+}
+
+.legal-page .meta {
+  color: var(--text-muted);
+  font-size: 0.82rem;
+  letter-spacing: 0.05em;
+}
+
+.legal-page .toc {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-left: 2px solid var(--accent);
+  padding: 1.5rem 2rem;
+  margin-bottom: 3.5rem;
+  border-radius: 2px;
+}
+
+.legal-page .toc-title {
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.legal-page .toc ol {
+  padding-left: 1.2rem;
+  margin-bottom: 0;
+}
+
+.legal-page .toc li {
+  margin-bottom: 0.35rem;
+  color: var(--text-muted);
+}
+
+.legal-page .toc a {
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.88rem;
+  transition: color 0.2s;
+}
+
+.legal-page .toc a:hover {
+  color: var(--accent);
+}
+
+.legal-page section {
+  margin-bottom: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.legal-page section:last-of-type {
+  border-bottom: none;
+}
+
+.legal-page h2 {
+  font-family: var(--font-cormorant, "Cormorant Garamond"), serif;
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--text);
+  margin-bottom: 1.2rem;
+  display: flex;
+  align-items: baseline;
+  gap: 0.8rem;
+}
+
+.legal-page .num {
+  font-size: 0.7rem;
+  color: var(--accent);
+  letter-spacing: 0.1em;
+  font-family: var(--font-dm-sans, "DM Sans"), sans-serif;
+  font-weight: 500;
+}
+
+.legal-page p {
+  color: #b8b6b0;
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+
+.legal-page ul {
+  padding-left: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.legal-page li {
+  color: #b8b6b0;
+  font-weight: 300;
+  margin-bottom: 0.4rem;
+}
+
+.legal-page li::marker {
+  color: var(--accent);
+}
+
+.legal-page .highlight-box {
+  background: var(--accent-dim);
+  border: 1px solid rgba(200, 169, 110, 0.2);
+  padding: 1.2rem 1.5rem;
+  border-radius: 2px;
+  margin: 1.5rem 0;
+}
+
+.legal-page .highlight-box p {
+  color: var(--text);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.legal-page strong {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.legal-page footer {
+  border-top: 1px solid var(--border);
+  padding: 2.5rem 0;
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.legal-page .footer-inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.legal-page .footer-copy {
+  color: var(--text-muted);
+  font-size: 0.8rem;
+}
+
+.legal-page .footer-link {
+  color: var(--accent);
+  text-decoration: none;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+}
+
+@media (max-width: 600px) {
+  .legal-page .hero {
+    padding: 3rem 0 2rem;
+  }
+  .legal-page h1 {
+    font-size: 2rem;
+  }
+}
