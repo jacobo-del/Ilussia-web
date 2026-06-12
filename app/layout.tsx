@@ -1,6 +1,14 @@
 import type { Metadata } from "next";
-import { Inter, Outfit } from "next/font/google";
+import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
+
+const playfair = Playfair_Display({
+  variable: "--font-playfair",
+  subsets: ["latin"],
+  style: ["normal", "italic"],
+  weight: ["400", "500", "600", "700", "900"],
+  display: "swap",
+});
 
 const inter = Inter({
   variable: "--font-inter",
@@ -8,37 +16,30 @@ const inter = Inter({
   display: "swap",
 });
 
-const outfit = Outfit({
-  variable: "--font-outfit",
-  subsets: ["latin"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  title: "IlussIA — Automatización e IA para centros de belleza, estética y bienestar premium en Guatemala",
+  title: "Ilussia Agency · Performance Marketing Guatemala",
   description:
-    "Automatizamos tu WhatsApp y CRM para que tu centro de belleza o estética llene su agenda con clientes calificados las 24 horas. Agente IA + CRM Kommo + Automatización N8N.",
+    "Agencia de performance marketing en Guatemala. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
   keywords: [
-    "agencia IA Guatemala",
-    "automatización WhatsApp spa",
-    "CRM centros de belleza",
-    "IlussIA",
-    "inteligencia artificial estética bienestar",
-    "automatización clínica capilar",
-    "odontología estética IA Guatemala",
+    "performance marketing Guatemala",
+    "Meta Ads Guatemala",
+    "agencia publicidad digital Guatemala",
+    "CRM Guatemala",
+    "agente IA ventas",
+    "ilussia agency",
   ],
   openGraph: {
-    title: "IlussIA — Automatización e IA para centros de belleza y bienestar premium",
+    title: "Ilussia Agency · Performance Marketing Guatemala",
     description:
-      "Llena tu agenda con clientes calificados. Automáticamente.",
+      "Agencia de performance marketing en Guatemala. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
     url: "https://ilussia.agency",
-    siteName: "IlussIA",
+    siteName: "Ilussia Agency",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "IlussIA — Automatización IA para Clínicas Estéticas",
+        alt: "Ilussia Agency — Performance Marketing Guatemala",
       },
     ],
     locale: "es_GT",
@@ -46,30 +47,21 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "IlussIA — Sistema de IA para Clínicas Estéticas",
+    title: "Ilussia Agency · Performance Marketing Guatemala",
     description:
-      "Llena tu agenda con pacientes calificados. Automáticamente.",
+      "Agencia de performance marketing en Guatemala. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
     images: ["/og-image.png"],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
+  robots: { index: true, follow: true },
+  metadataBase: new URL("https://ilussia.agency"),
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html
-      lang="es"
-      className={`${inter.variable} ${outfit.variable} h-full`}
-    >
-      <body className="min-h-full antialiased bg-[#080B14] text-white">
-        {children}
-      </body>
+    <html lang="es" className={`${playfair.variable} ${inter.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }
