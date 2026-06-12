@@ -5,7 +5,6 @@ import Diferenciador from "@/components/landing/Diferenciador";
 import ComoFunciona  from "@/components/landing/Sistema";
 import Vsl           from "@/components/landing/Vsl";
 import Servicios     from "@/components/landing/Servicios";
-import Testimoniales from "@/components/landing/Testimoniales";
 import Faq           from "@/components/landing/Faq";
 import Formulario    from "@/components/landing/Formulario";
 import Footer        from "@/components/landing/Footer";
@@ -22,7 +21,6 @@ export default function Home() {
         <ComoFunciona />
         <Vsl />
         <Servicios />
-        <Testimoniales />
         <Faq />
         <Formulario />
       </main>
