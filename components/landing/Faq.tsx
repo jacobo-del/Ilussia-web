@@ -22,7 +22,7 @@ const faqs = [
   },
   {
     q: "¿Para qué tipo de negocios trabajan?",
-    a: "Negocios establecidos en Guatemala con servicio o producto validado que quieren escalar. Salud, estética, educación, servicios B2B, ticket medio-alto.",
+    a: "Negocios establecidos con servicio o producto validado que quieren escalar. Salud, estética, educación, servicios B2B, ticket medio-alto. Trabajamos con clientes en toda Latinoamérica.",
   },
 ];
 

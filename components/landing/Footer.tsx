@@ -51,7 +51,7 @@ export default function Footer() {
                 fontFamily: "var(--font-inter)",
               }}
             >
-              Performance marketing en Guatemala. Meta Ads, CRM y agentes IA
+              Performance marketing en Latinoamérica. Meta Ads, CRM y agentes IA
               para convertir publicidad en ventas reales.
             </p>
           </div>
@@ -151,7 +151,7 @@ export default function Footer() {
                 fontFamily: "var(--font-inter)",
               }}
             >
-              Guatemala, GT
+              Latinoamérica
             </p>
           </div>
         </div>

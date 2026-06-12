@@ -7,7 +7,7 @@ const items = [
   {
     text: "Llevábamos 8 meses pagando publicidad sin saber si funcionaba. Con Ilussia, en el primer mes ya teníamos trazabilidad completa. Ahora sé exactamente cuánto me cuesta cada cliente.",
     name: "Carlos Mendoza",
-    role: "Propietario, Centro Estético Guatemala",
+    role: "Propietario, Centro Estético",
     avatar: "https://i.pravatar.cc/80?img=3",
   },
   {

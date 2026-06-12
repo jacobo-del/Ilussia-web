@@ -65,7 +65,7 @@ export default function Hero() {
             fontFamily: "var(--font-inter)",
           }}
         >
-          Performance Marketing · Guatemala
+          Performance Marketing · Latinoamérica
         </motion.p>
 
         <motion.h1

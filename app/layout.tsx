@@ -17,21 +17,21 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Ilussia Agency · Performance Marketing Guatemala",
+  title: "Ilussia Agency · Performance Marketing Latinoamérica",
   description:
-    "Agencia de performance marketing en Guatemala. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
+    "Agencia de performance marketing en Latinoamérica. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
   keywords: [
-    "performance marketing Guatemala",
-    "Meta Ads Guatemala",
-    "agencia publicidad digital Guatemala",
-    "CRM Guatemala",
+    "performance marketing Latinoamérica",
+    "Meta Ads Latinoamérica",
+    "agencia publicidad digital Latinoamérica",
+    "CRM Latinoamérica",
     "agente IA ventas",
     "ilussia agency",
   ],
   openGraph: {
-    title: "Ilussia Agency · Performance Marketing Guatemala",
+    title: "Ilussia Agency · Performance Marketing Latinoamérica",
     description:
-      "Agencia de performance marketing en Guatemala. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
+      "Agencia de performance marketing en Latinoamérica. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
     url: "https://ilussia.agency",
     siteName: "Ilussia Agency",
     images: [
@@ -39,17 +39,17 @@ export const metadata: Metadata = {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "Ilussia Agency — Performance Marketing Guatemala",
+        alt: "Ilussia Agency — Performance Marketing Latinoamérica",
       },
     ],
-    locale: "es_GT",
+    locale: "es_ES",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Ilussia Agency · Performance Marketing Guatemala",
+    title: "Ilussia Agency · Performance Marketing Latinoamérica",
     description:
-      "Agencia de performance marketing en Guatemala. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
+      "Agencia de performance marketing en Latinoamérica. Meta Ads, CRM y agentes IA para convertir publicidad en ventas reales.",
     images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
