@@ -179,7 +179,7 @@ export default function Hero() {
           }}
         >
           ✓ Sin contrato anual &nbsp;·&nbsp; ✓ Resultados en 30 días
-          &nbsp;·&nbsp; ✓ Setup incluido
+          &nbsp;·&nbsp; ✓ Data en tiempo real
         </motion.p>
       </div>
 
