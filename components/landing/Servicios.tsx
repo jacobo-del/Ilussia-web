@@ -63,6 +63,34 @@ export default function Servicios() {
           transition={{ duration: 0.6 }}
           style={{ textAlign: "center", marginBottom: "3.5rem" }}
         >
+          {/* Launch offer banner */}
+          <div
+            style={{
+              display: "inline-flex",
+              alignItems: "center",
+              gap: "0.5rem",
+              background: "rgba(201,168,76,0.1)",
+              border: "1px solid rgba(201,168,76,0.35)",
+              borderRadius: 999,
+              padding: "0.4rem 1.1rem",
+              marginBottom: "1.25rem",
+            }}
+          >
+            <span style={{ fontSize: "0.75rem" }}>🚀</span>
+            <span
+              style={{
+                color: "#C9A84C",
+                fontSize: "0.78rem",
+                fontWeight: 700,
+                fontFamily: "var(--font-inter)",
+                letterSpacing: "0.06em",
+                textTransform: "uppercase",
+              }}
+            >
+              Oferta de lanzamiento · Solo primeros clientes
+            </span>
+          </div>
+
           <h2
             style={{
               fontFamily: "var(--font-playfair)",
@@ -149,13 +177,26 @@ export default function Servicios() {
               <div style={{ marginBottom: "1.75rem" }}>
                 <p
                   style={{
-                    color: "#555",
                     fontSize: "0.8rem",
                     fontFamily: "var(--font-inter)",
                     marginBottom: "0.25rem",
+                    display: "flex",
+                    alignItems: "center",
+                    gap: "0.4rem",
                   }}
                 >
-                  Setup: {plan.setup}
+                  <span style={{ color: "#555" }}>Setup:</span>
+                  <s style={{ color: "#444" }}>{plan.setup}</s>
+                  <span
+                    style={{
+                      color: "#22c55e",
+                      fontWeight: 700,
+                      fontSize: "0.78rem",
+                      letterSpacing: "0.04em",
+                    }}
+                  >
+                    GRATIS
+                  </span>
                 </p>
                 <p
                   style={{
@@ -237,35 +278,47 @@ export default function Servicios() {
           ))}
         </div>
 
-        <motion.p
+        <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          style={{
-            textAlign: "center",
-            color: "#B8BCCF",
-            fontSize: "0.875rem",
-            marginTop: "2rem",
-            fontFamily: "var(--font-inter)",
-          }}
+          style={{ textAlign: "center", marginTop: "2rem" }}
         >
-          ¿No sabes cuál elegir?{" "}
-          <button
-            onClick={() => scrollTo("formulario")}
+          <p
             style={{
-              color: "#C9A84C",
-              background: "none",
-              border: "none",
-              cursor: "pointer",
-              textDecoration: "underline",
-              fontFamily: "var(--font-inter)",
+              color: "#B8BCCF",
               fontSize: "0.875rem",
+              fontFamily: "var(--font-inter)",
+              marginBottom: "0.5rem",
             }}
           >
-            La auditoría gratuita te lo dirá.
-          </button>
-        </motion.p>
+            ¿No sabes cuál elegir?{" "}
+            <button
+              onClick={() => scrollTo("formulario")}
+              style={{
+                color: "#C9A84C",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                textDecoration: "underline",
+                fontFamily: "var(--font-inter)",
+                fontSize: "0.875rem",
+              }}
+            >
+              La auditoría gratuita te lo dirá.
+            </button>
+          </p>
+          <p
+            style={{
+              color: "#555",
+              fontSize: "0.75rem",
+              fontFamily: "var(--font-inter)",
+            }}
+          >
+            * Setup gratuito disponible por tiempo limitado para los primeros clientes. Precio habitual de setup aplica una vez finalizado el periodo de lanzamiento.
+          </p>
+        </motion.div>
       </div>
     </section>
   );
