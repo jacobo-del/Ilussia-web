@@ -22,7 +22,7 @@ const steps = [
 
 export default function ComoFunciona() {
   return (
-    <section id="como-funciona" className="section-pad" style={{ background: "#0A0A0A" }}>
+    <section id="como-funciona" className="section-pad" style={{ background: "#070A20" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto", padding: "0 1.5rem" }}>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -44,7 +44,7 @@ export default function ComoFunciona() {
           </h2>
           <p
             style={{
-              color: "#A0A0A0",
+              color: "#B8BCCF",
               fontSize: "1rem",
               fontFamily: "var(--font-inter)",
             }}
@@ -93,7 +93,7 @@ export default function ComoFunciona() {
                     height: 56,
                     borderRadius: "50%",
                     border: "2px solid #C9A84C",
-                    background: "#0A0A0A",
+                    background: "#070A20",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -121,7 +121,7 @@ export default function ComoFunciona() {
                 </h3>
                 <p
                   style={{
-                    color: "#A0A0A0",
+                    color: "#B8BCCF",
                     fontSize: "0.9rem",
                     lineHeight: 1.7,
                     fontFamily: "var(--font-inter)",
@@ -162,7 +162,7 @@ export default function ComoFunciona() {
                     height: 48,
                     borderRadius: "50%",
                     border: "2px solid #C9A84C",
-                    background: "#0A0A0A",
+                    background: "#070A20",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
@@ -200,7 +200,7 @@ export default function ComoFunciona() {
                 </h3>
                 <p
                   style={{
-                    color: "#A0A0A0",
+                    color: "#B8BCCF",
                     fontSize: "0.875rem",
                     lineHeight: 1.7,
                     fontFamily: "var(--font-inter)",

@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function Vsl() {
   return (
-    <section className="section-pad" style={{ background: "#111111" }}>
+    <section className="section-pad" style={{ background: "#0B0F2C" }}>
       <div
         style={{
           maxWidth: 896,
@@ -32,7 +32,7 @@ export default function Vsl() {
           </h2>
           <p
             style={{
-              color: "#A0A0A0",
+              color: "#B8BCCF",
               fontSize: "1rem",
               marginBottom: "2.5rem",
               fontFamily: "var(--font-inter)",
@@ -55,7 +55,7 @@ export default function Vsl() {
             borderRadius: "12px",
             overflow: "hidden",
             border: "1px solid rgba(201,168,76,0.3)",
-            background: "#1A1A1A",
+            background: "#111538",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",

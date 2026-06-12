@@ -29,7 +29,7 @@ export default function Testimoniales() {
     <section
       id="testimoniales"
       className="section-pad"
-      style={{ background: "#111111" }}
+      style={{ background: "#0B0F2C" }}
     >
       <div style={{ maxWidth: 1152, margin: "0 auto", padding: "0 1.5rem" }}>
         <motion.h2
@@ -64,7 +64,7 @@ export default function Testimoniales() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
               style={{
-                background: "#1A1A1A",
+                background: "#111538",
                 border: "1px solid rgba(201,168,76,0.15)",
                 borderRadius: "8px",
                 padding: "2rem",
@@ -75,7 +75,7 @@ export default function Testimoniales() {
             >
               <p
                 style={{
-                  color: "#A0A0A0",
+                  color: "#B8BCCF",
                   fontSize: "0.9rem",
                   lineHeight: 1.8,
                   fontStyle: "italic",
@@ -115,7 +115,7 @@ export default function Testimoniales() {
                   </p>
                   <p
                     style={{
-                      color: "#A0A0A0",
+                      color: "#B8BCCF",
                       fontSize: "0.78rem",
                       fontFamily: "var(--font-inter)",
                     }}

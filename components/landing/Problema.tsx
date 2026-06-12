@@ -19,7 +19,7 @@ const cards = [
 
 export default function Problema() {
   return (
-    <section className="section-pad" style={{ background: "#0A0A0A" }}>
+    <section className="section-pad" style={{ background: "#070A20" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto", padding: "0 1.5rem" }}>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -53,7 +53,7 @@ export default function Problema() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
               style={{
-                background: "#111111",
+                background: "#0B0F2C",
                 border: "1px solid rgba(201,168,76,0.2)",
                 borderRadius: "8px",
                 padding: "2rem",
@@ -62,7 +62,7 @@ export default function Problema() {
               <div style={{ fontSize: "2rem", marginBottom: "1rem" }}>{c.icon}</div>
               <p
                 style={{
-                  color: "#A0A0A0",
+                  color: "#B8BCCF",
                   lineHeight: 1.75,
                   fontSize: "0.95rem",
                   fontFamily: "var(--font-inter)",

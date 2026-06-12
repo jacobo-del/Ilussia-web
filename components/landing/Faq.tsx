@@ -30,7 +30,7 @@ export default function Faq() {
   const [openIdx, setOpenIdx] = useState<number | null>(null);
 
   return (
-    <section className="section-pad" style={{ background: "#0A0A0A" }}>
+    <section className="section-pad" style={{ background: "#070A20" }}>
       <div style={{ maxWidth: 768, margin: "0 auto", padding: "0 1.5rem" }}>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -119,7 +119,7 @@ export default function Faq() {
                     <p
                       style={{
                         padding: "0 1.5rem 1.5rem",
-                        color: "#A0A0A0",
+                        color: "#B8BCCF",
                         fontSize: "0.9rem",
                         lineHeight: 1.75,
                         fontFamily: "var(--font-inter)",

@@ -3,11 +3,11 @@
 :root {
   --gold: #C9A84C;
   --gold-dim: rgba(201, 168, 76, 0.12);
-  --gold-border: rgba(201, 168, 76, 0.2);
-  --bg: #0A0A0A;
-  --surface: #111111;
-  --surface-2: #1A1A1A;
-  --text-muted: #A0A0A0;
+  --gold-border: rgba(201, 168, 76, 0.22);
+  --bg: #070A20;
+  --surface: #0B0F2C;
+  --surface-2: #111538;
+  --text-muted: #B8BCCF;
 }
 
 @theme inline {
@@ -20,7 +20,7 @@
 html { scroll-behavior: smooth; }
 
 body {
-  background: #0A0A0A;
+  background: #070A20;
   color: #ffffff;
   font-family: var(--font-inter), system-ui, sans-serif;
   font-size: 16px;
@@ -30,8 +30,8 @@ body {
 }
 
 ::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: #0A0A0A; }
-::-webkit-scrollbar-thumb { background: #2a2a2a; border-radius: 3px; }
+::-webkit-scrollbar-track { background: #070A20; }
+::-webkit-scrollbar-thumb { background: #1a2060; border-radius: 3px; }
 ::-webkit-scrollbar-thumb:hover { background: #C9A84C; }
 
 .section-pad {

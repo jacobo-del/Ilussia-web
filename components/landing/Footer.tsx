@@ -15,7 +15,7 @@ export default function Footer() {
   return (
     <footer
       style={{
-        background: "#0A0A0A",
+        background: "#070A20",
         borderTop: "1px solid rgba(201,168,76,0.12)",
         padding: "3.5rem 1.5rem 2rem",
       }}
@@ -60,7 +60,7 @@ export default function Footer() {
           <nav>
             <p
               style={{
-                color: "#A0A0A0",
+                color: "#B8BCCF",
                 fontSize: "0.7rem",
                 fontWeight: 600,
                 letterSpacing: "0.1em",
@@ -113,7 +113,7 @@ export default function Footer() {
           <div>
             <p
               style={{
-                color: "#A0A0A0",
+                color: "#B8BCCF",
                 fontSize: "0.7rem",
                 fontWeight: 600,
                 letterSpacing: "0.1em",

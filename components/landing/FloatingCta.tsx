@@ -41,7 +41,7 @@ export default function FloatingCta() {
         onClick={scrollToForm}
         style={{
           background: "#C9A84C",
-          color: "#0A0A0A",
+          color: "#070A20",
           border: "none",
           borderRadius: "999px",
           padding: "0.9rem 2rem",

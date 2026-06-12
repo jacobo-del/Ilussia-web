@@ -84,7 +84,7 @@ export default function Formulario() {
 
   const inputStyle = (field: keyof FormState): React.CSSProperties => ({
     width: "100%",
-    background: "#1A1A1A",
+    background: "#111538",
     border: `1px solid ${
       errors[field] && touched[field]
         ? "#ef4444"
@@ -102,7 +102,7 @@ export default function Formulario() {
 
   const labelStyle: React.CSSProperties = {
     display: "block",
-    color: "#A0A0A0",
+    color: "#B8BCCF",
     fontSize: "0.8rem",
     marginBottom: "0.4rem",
     fontFamily: "var(--font-inter)",
@@ -123,7 +123,7 @@ export default function Formulario() {
       id="formulario"
       style={{
         padding: "120px 1.5rem",
-        background: "#111111",
+        background: "#0B0F2C",
       }}
     >
       <div style={{ maxWidth: 600, margin: "0 auto" }}>
@@ -141,7 +141,7 @@ export default function Formulario() {
           </h2>
           <p
             style={{
-              color: "#A0A0A0",
+              color: "#B8BCCF",
               fontFamily: "var(--font-inter)",
               fontSize: "0.95rem",
               lineHeight: 1.7,
@@ -154,7 +154,7 @@ export default function Formulario() {
 
         <div
           style={{
-            background: "#1A1A1A",
+            background: "#111538",
             border: "1px solid rgba(201,168,76,0.2)",
             borderRadius: "8px",
             padding: "2.5rem",
@@ -196,7 +196,7 @@ export default function Formulario() {
               </h3>
               <p
                 style={{
-                  color: "#A0A0A0",
+                  color: "#B8BCCF",
                   fontFamily: "var(--font-inter)",
                   fontSize: "0.9rem",
                   lineHeight: 1.7,
@@ -308,7 +308,7 @@ export default function Formulario() {
                     Selecciona tu presupuesto
                   </option>
                   {budgets.map((b) => (
-                    <option key={b} value={b} style={{ background: "#1A1A1A" }}>
+                    <option key={b} value={b} style={{ background: "#111538" }}>
                       {b}
                     </option>
                   ))}
@@ -324,7 +324,7 @@ export default function Formulario() {
                 style={{
                   width: "100%",
                   background: isValid ? "#C9A84C" : "rgba(201,168,76,0.25)",
-                  color: isValid ? "#0A0A0A" : "#666",
+                  color: isValid ? "#070A20" : "#666",
                   border: "none",
                   borderRadius: "4px",
                   padding: "1rem",
@@ -347,7 +347,7 @@ export default function Formulario() {
                         width: 18,
                         height: 18,
                         border: "2px solid rgba(0,0,0,0.2)",
-                        borderTopColor: "#0A0A0A",
+                        borderTopColor: "#070A20",
                         borderRadius: "50%",
                         display: "inline-block",
                         animation: "spin 0.7s linear infinite",

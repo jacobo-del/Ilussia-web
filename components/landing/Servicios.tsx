@@ -54,7 +54,7 @@ const plans = [
 
 export default function Servicios() {
   return (
-    <section id="servicios" className="section-pad" style={{ background: "#0A0A0A" }}>
+    <section id="servicios" className="section-pad" style={{ background: "#070A20" }}>
       <div style={{ maxWidth: 1152, margin: "0 auto", padding: "0 1.5rem" }}>
         <motion.div
           initial={{ opacity: 0, y: 24 }}
@@ -76,7 +76,7 @@ export default function Servicios() {
           </h2>
           <p
             style={{
-              color: "#A0A0A0",
+              color: "#B8BCCF",
               fontFamily: "var(--font-inter)",
               fontSize: "0.95rem",
             }}
@@ -102,7 +102,7 @@ export default function Servicios() {
               transition={{ duration: 0.5, delay: i * 0.12 }}
               whileHover={{ y: -6, boxShadow: "0 8px 40px rgba(201,168,76,0.12)" }}
               style={{
-                background: plan.featured ? "#1A1A1A" : "#111111",
+                background: plan.featured ? "#111538" : "#0B0F2C",
                 border: plan.featured
                   ? "1px solid #C9A84C"
                   : "1px solid rgba(201,168,76,0.18)",
@@ -120,7 +120,7 @@ export default function Servicios() {
                     left: "50%",
                     transform: "translateX(-50%)",
                     background: "#C9A84C",
-                    color: "#0A0A0A",
+                    color: "#070A20",
                     fontSize: "0.72rem",
                     fontWeight: 700,
                     padding: "0.25rem 0.9rem",
@@ -187,7 +187,7 @@ export default function Servicios() {
                       display: "flex",
                       alignItems: "flex-start",
                       gap: "0.6rem",
-                      color: "#A0A0A0",
+                      color: "#B8BCCF",
                       fontSize: "0.875rem",
                       fontFamily: "var(--font-inter)",
                       lineHeight: 1.5,
@@ -212,7 +212,7 @@ export default function Servicios() {
                 style={{
                   width: "100%",
                   background: plan.featured ? "#C9A84C" : "transparent",
-                  color: plan.featured ? "#0A0A0A" : "#C9A84C",
+                  color: plan.featured ? "#070A20" : "#C9A84C",
                   border: plan.featured
                     ? "none"
                     : "1px solid rgba(201,168,76,0.4)",
@@ -244,7 +244,7 @@ export default function Servicios() {
           transition={{ delay: 0.5 }}
           style={{
             textAlign: "center",
-            color: "#A0A0A0",
+            color: "#B8BCCF",
             fontSize: "0.875rem",
             marginTop: "2rem",
             fontFamily: "var(--font-inter)",

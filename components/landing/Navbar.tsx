@@ -1,6 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
+import Image from "next/image";
 
 const scrollTo = (id: string) =>
   document.getElementById(id)?.scrollIntoView({ behavior: "smooth" });
@@ -31,7 +32,7 @@ export default function Navbar() {
         right: 0,
         zIndex: 50,
         transition: "background 0.3s, border-color 0.3s",
-        background: scrolled ? "rgba(10,10,10,0.95)" : "transparent",
+        background: scrolled ? "rgba(7,10,32,0.96)" : "transparent",
         backdropFilter: scrolled ? "blur(12px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled
@@ -54,17 +55,22 @@ export default function Navbar() {
         <button
           onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
           style={{
-            fontFamily: "var(--font-playfair)",
-            fontStyle: "italic",
-            fontSize: "1.5rem",
-            color: "#fff",
             background: "none",
             border: "none",
             cursor: "pointer",
-            letterSpacing: "0.01em",
+            padding: 0,
+            display: "flex",
+            alignItems: "center",
           }}
         >
-          ilussia
+          <Image
+            src="/logo-ilussia.png"
+            alt="Ilussia Agency"
+            width={120}
+            height={36}
+            style={{ objectFit: "contain", height: 36, width: "auto" }}
+            priority
+          />
         </button>
 
         {/* Desktop nav */}
@@ -81,7 +87,7 @@ export default function Navbar() {
               key={l.id}
               onClick={() => scrollTo(l.id)}
               style={{
-                color: "#A0A0A0",
+                color: "#B8BCCF",
                 fontSize: "0.875rem",
                 background: "none",
                 border: "none",
@@ -93,7 +99,7 @@ export default function Navbar() {
                 ((e.currentTarget as HTMLElement).style.color = "#fff")
               }
               onMouseLeave={(e) =>
-                ((e.currentTarget as HTMLElement).style.color = "#A0A0A0")
+                ((e.currentTarget as HTMLElement).style.color = "#B8BCCF")
               }
             >
               {l.label}
@@ -103,7 +109,7 @@ export default function Navbar() {
             onClick={() => scrollTo("formulario")}
             style={{
               background: "#C9A84C",
-              color: "#0A0A0A",
+              color: "#070A20",
               padding: "0.5rem 1.25rem",
               borderRadius: "4px",
               fontWeight: 700,
@@ -158,7 +164,7 @@ export default function Navbar() {
       {open && (
         <div
           style={{
-            background: "#111111",
+            background: "#0B0F2C",
             borderTop: "1px solid rgba(201,168,76,0.15)",
             padding: "1rem 1.5rem 1.5rem",
           }}
@@ -174,7 +180,7 @@ export default function Navbar() {
                 display: "block",
                 width: "100%",
                 textAlign: "left",
-                color: "#A0A0A0",
+                color: "#B8BCCF",
                 background: "none",
                 border: "none",
                 padding: "0.75rem 0",
@@ -195,7 +201,7 @@ export default function Navbar() {
             style={{
               width: "100%",
               background: "#C9A84C",
-              color: "#0A0A0A",
+              color: "#070A20",
               padding: "0.75rem",
               borderRadius: "4px",
               fontWeight: 700,

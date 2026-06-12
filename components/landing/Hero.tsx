@@ -14,7 +14,7 @@ export default function Hero() {
         display: "flex",
         alignItems: "center",
         overflow: "hidden",
-        background: "#0A0A0A",
+        background: "#070A20",
       }}
     >
       {/* Background image */}
@@ -38,7 +38,7 @@ export default function Hero() {
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(to right, #0A0A0A 55%, rgba(10,10,10,0.5) 100%)",
+            "linear-gradient(to right, #070A20 55%, rgba(10,10,10,0.5) 100%)",
         }}
       />
 
@@ -95,7 +95,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2 }}
           style={{
-            color: "#A0A0A0",
+            color: "#B8BCCF",
             fontSize: "1.1rem",
             lineHeight: 1.7,
             marginBottom: "2.5rem",
@@ -122,7 +122,7 @@ export default function Hero() {
             onClick={() => scrollTo("formulario")}
             style={{
               background: "#C9A84C",
-              color: "#0A0A0A",
+              color: "#070A20",
               padding: "0.9rem 2rem",
               borderRadius: "4px",
               fontWeight: 700,

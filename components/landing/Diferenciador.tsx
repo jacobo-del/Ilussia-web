@@ -12,7 +12,7 @@ const rows = [
 
 export default function Diferenciador() {
   return (
-    <section className="section-pad" style={{ background: "#111111" }}>
+    <section className="section-pad" style={{ background: "#0B0F2C" }}>
       <div style={{ maxWidth: 896, margin: "0 auto", padding: "0 1.5rem" }}>
         <motion.h2
           initial={{ opacity: 0, y: 24 }}
@@ -43,7 +43,7 @@ export default function Diferenciador() {
             style={{
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
-              background: "#1A1A1A",
+              background: "#111538",
               borderBottom: "1px solid rgba(201,168,76,0.2)",
             }}
           >
