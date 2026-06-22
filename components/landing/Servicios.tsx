@@ -21,7 +21,7 @@ const plans = [
     cta: "Comenzar con Sistema Base",
   },
   {
-    name: "Máquina de Crecimiento",
+    name: "Sistema de Crecimiento",
     badge: "Más popular",
     setup: "Q4,000",
     monthly: "Q5,800/mes",
@@ -34,7 +34,7 @@ const plans = [
       "Automatizaciones de seguimiento post-lead",
       "Reportes quincenales",
     ],
-    cta: "Quiero la Máquina de Crecimiento",
+    cta: "Quiero el Sistema de Crecimiento",
   },
   {
     name: "Sistema Completo",

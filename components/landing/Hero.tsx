@@ -83,11 +83,10 @@ export default function Hero() {
             maxWidth: 640,
           }}
         >
-          Tu competencia
-          <br />paga publicidad.
-          <br />Tú pagas por
-          <br />
-          <span style={{ color: "#C9A84C" }}>clientes.</span>
+          Sistemas de Adquisición
+          <br />para Clínicas y Centros
+          <br />Estéticos{" "}
+          <span style={{ color: "#C9A84C" }}>Premium.</span>
         </motion.h1>
 
         <motion.p
@@ -103,8 +102,8 @@ export default function Hero() {
             fontFamily: "var(--font-inter)",
           }}
         >
-          No medimos likes ni alcance. Construimos el sistema completo que
-          convierte tu inversión publicitaria en ventas reales y medibles.
+          Deja de perder tiempo con leads curiosos. Llenamos tu agenda con
+          pacientes calificados usando IA, Meta Ads y automatización avanzada.
         </motion.p>
 
         <motion.div
@@ -178,8 +177,8 @@ export default function Hero() {
             fontFamily: "var(--font-inter)",
           }}
         >
-          ✓ Sin contrato anual &nbsp;·&nbsp; ✓ Resultados en 30 días
-          &nbsp;·&nbsp; ✓ Data en tiempo real
+          ✓ Solo para clínicas con capacidad de inversión &nbsp;·&nbsp; ✓ Sin contrato anual
+          &nbsp;·&nbsp; ✓ Resultados medibles desde el día 1
         </motion.p>
       </div>
 

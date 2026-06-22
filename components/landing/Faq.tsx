@@ -6,23 +6,23 @@ import { motion, AnimatePresence } from "framer-motion";
 const faqs = [
   {
     q: "¿Necesito experiencia previa con publicidad digital?",
-    a: "No. Configuramos todo desde cero y te explicamos cada decisión. Solo necesitas un negocio activo y disposición para crecer.",
+    a: "No. Nosotros configuramos todo desde cero. Solo necesitas una clínica activa con capacidad para atender nuevos pacientes.",
   },
   {
-    q: "¿Cuánto tiempo tarda en verse resultados?",
-    a: "Primeros datos en 7 días. Resultados optimizados entre semana 3 y 6, según industria y presupuesto de pauta.",
+    q: "¿En cuánto tiempo empieza a llenarse mi agenda?",
+    a: "Primeros leads calificados en los primeros 7 días. Agenda con flujo consistente entre la semana 3 y 6, dependiendo de tu especialidad y presupuesto de pauta.",
   },
   {
     q: "¿El presupuesto de pauta va incluido en el precio?",
-    a: "No. El precio es nuestra gestión, el sistema y la tecnología. El presupuesto de Meta Ads es tuyo y lo manejas directamente. Recomendamos mínimo Q3,000/mes de pauta para resultados consistentes.",
+    a: "No. El precio cubre nuestra gestión, el sistema y la tecnología. El presupuesto de Meta Ads lo manejas directamente tú. Recomendamos mínimo Q3,000/mes de pauta para ver resultados consistentes.",
   },
   {
-    q: "¿Qué pasa si no estoy satisfecho?",
-    a: "Contratos mensuales. Si en el primer mes no ves valor, puedes salir sin penalización.",
+    q: "¿Trabajan solo con clínicas estéticas o también con otros negocios?",
+    a: "Trabajamos principalmente con clínicas médico-estéticas, centros de bienestar y spas premium. Nuestros sistemas están diseñados para el modelo clínico: agenda, seguimiento de pacientes y trazabilidad de tratamientos.",
   },
   {
-    q: "¿Para qué tipo de negocios trabajan?",
-    a: "Negocios establecidos con servicio o producto validado que quieren escalar. Salud, estética, educación, servicios B2B, ticket medio-alto. Trabajamos con clientes en toda Latinoamérica.",
+    q: "¿Qué pasa si los resultados no son los que esperaba?",
+    a: "Contratos mensuales, sin permanencia. Si en el primer mes no ves el valor, puedes salir sin penalización. Nuestro modelo funciona solo si el tuyo también funciona.",
   },
 ];
 

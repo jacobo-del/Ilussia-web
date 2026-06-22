@@ -38,7 +38,7 @@ export default function Vsl() {
               fontFamily: "var(--font-inter)",
             }}
           >
-            2 minutos que te van a cambiar la forma de ver tu publicidad
+            2 minutos que van a cambiar cómo adquirís pacientes
           </p>
         </motion.div>
 
@@ -64,7 +64,7 @@ export default function Vsl() {
           {/*
            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
            INSERTAR VIDEO DE YOUTUBE AQUÍ
-           Reemplaza este bloque por:
+           Reemplaza este bloque completo por:
 
            <iframe
              src="https://www.youtube.com/embed/TU_VIDEO_ID"
@@ -80,25 +80,48 @@ export default function Vsl() {
 
            ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
           */}
-          <div>
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: "1rem",
+              padding: "3rem 2rem",
+            }}
+          >
             <div
               style={{
-                fontSize: "3rem",
-                marginBottom: "1rem",
-                opacity: 0.3,
-                color: "#C9A84C",
+                width: 56,
+                height: 56,
+                borderRadius: "50%",
+                border: "1px solid rgba(201,168,76,0.3)",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "rgba(201,168,76,0.4)",
+                fontSize: "1.2rem",
               }}
             >
               ▶
             </div>
             <p
               style={{
+                color: "#B8BCCF",
+                fontSize: "0.95rem",
+                fontFamily: "var(--font-inter)",
+                fontWeight: 500,
+              }}
+            >
+              Video en producción — disponible esta semana
+            </p>
+            <p
+              style={{
                 color: "#555",
-                fontSize: "0.85rem",
+                fontSize: "0.78rem",
                 fontFamily: "var(--font-inter)",
               }}
             >
-              Video próximamente
+              Verás el sistema completo funcionando en tiempo real
             </p>
           </div>
         </motion.div>

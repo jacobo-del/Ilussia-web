@@ -49,7 +49,7 @@ export default function ComoFunciona() {
               fontFamily: "var(--font-inter)",
             }}
           >
-            En menos de 2 semanas, tienes todo activo
+            En menos de 2 semanas, tu clínica tiene el sistema activo
           </p>
         </motion.div>
 

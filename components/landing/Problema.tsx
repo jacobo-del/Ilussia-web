@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const cards = [
   {
     icon: "📊",
-    text: "Tu agencia te manda un PDF con alcance e impresiones, pero no puedes conectar esos números con tus ventas del mes.",
+    text: "Tu agencia te manda un reporte de alcance e impresiones. Pero tu agenda sigue con huecos.",
   },
   {
     icon: "💬",
@@ -13,7 +13,7 @@ const cards = [
   },
   {
     icon: "💸",
-    text: "Llevas meses pagando publicidad y no sabes con certeza si está funcionando o si simplemente estás gastando.",
+    text: "Llevas meses pagando publicidad y no sabes si los pacientes que llegan son de tus anuncios o del boca a boca.",
   },
 ];
 
@@ -88,8 +88,7 @@ export default function Problema() {
             fontFamily: "var(--font-playfair)",
           }}
         >
-          Si reconociste al menos una, tu publicidad no está trabajando a su
-          máximo potencial.
+          Si reconociste al menos una, tu clínica está dejando pacientes ir.
         </motion.p>
       </div>
     </section>

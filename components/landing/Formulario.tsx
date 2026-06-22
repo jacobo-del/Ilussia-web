@@ -8,10 +8,18 @@ type FormState = {
   nombre: string;
   telefono: string;
   email: string;
+  tipoNegocio: string;
   presupuesto: string;
 };
 
 type Errors = Partial<Record<keyof FormState, string>>;
+
+const tiposNegocio = [
+  "Clínica médico-estética",
+  "Centro de bienestar / spa",
+  "Clínica dental estética",
+  "Otro tipo de negocio",
+];
 
 const budgets = [
   "Menos de Q5,000/mes",
@@ -26,6 +34,7 @@ function validate(f: FormState): Errors {
   const digits = f.telefono.replace(/\D/g, "");
   if (digits.length < 8) e.telefono = "Ingresa al menos 8 dígitos";
   if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(f.email)) e.email = "Email inválido";
+  if (!f.tipoNegocio) e.tipoNegocio = "Selecciona tu tipo de negocio";
   if (!f.presupuesto) e.presupuesto = "Selecciona tu presupuesto";
   return e;
 }
@@ -35,6 +44,7 @@ export default function Formulario() {
     nombre: "",
     telefono: "",
     email: "",
+    tipoNegocio: "",
     presupuesto: "",
   });
   const [errors, setErrors] = useState<Errors>({});
@@ -64,7 +74,7 @@ export default function Formulario() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    const allTouched = { nombre: true, telefono: true, email: true, presupuesto: true };
+    const allTouched = { nombre: true, telefono: true, email: true, tipoNegocio: true, presupuesto: true };
     setTouched(allTouched);
     const errs = validate(form);
     setErrors(errs);
@@ -255,7 +265,7 @@ export default function Formulario() {
                     id="telefono"
                     name="telefono"
                     type="tel"
-                    placeholder="+502 0000 0000"
+                    placeholder="+502"
                     value={form.telefono}
                     onChange={handleChange}
                     onBlur={handleBlur}
@@ -285,6 +295,36 @@ export default function Formulario() {
                 />
                 {errors.email && touched.email && (
                   <p style={errorStyle}>{errors.email}</p>
+                )}
+              </div>
+
+              <div style={{ marginBottom: "1.25rem" }}>
+                <label htmlFor="tipoNegocio" style={labelStyle}>
+                  ¿Qué tipo de negocio tenés? *
+                </label>
+                <select
+                  id="tipoNegocio"
+                  name="tipoNegocio"
+                  value={form.tipoNegocio}
+                  onChange={handleChange}
+                  onBlur={handleBlur}
+                  style={{
+                    ...inputStyle("tipoNegocio"),
+                    color: form.tipoNegocio ? "#fff" : "#555",
+                    cursor: "pointer",
+                  }}
+                >
+                  <option value="" disabled hidden>
+                    Selecciona tu tipo de negocio
+                  </option>
+                  {tiposNegocio.map((t) => (
+                    <option key={t} value={t} style={{ background: "#111538" }}>
+                      {t}
+                    </option>
+                  ))}
+                </select>
+                {errors.tipoNegocio && touched.tipoNegocio && (
+                  <p style={errorStyle}>{errors.tipoNegocio}</p>
                 )}
               </div>
 

@@ -3,10 +3,10 @@
 import { motion } from "framer-motion";
 
 const rows = [
-  { bad: "Te venden presencia", good: "Te construimos un sistema" },
-  { bad: "Reportan seguidores", good: "Reportamos costo por cliente" },
+  { bad: "Venden likes y branding vacío", good: "Llenamos tu agenda clínica" },
+  { bad: "Reportan seguidores", good: "Reportamos costo por paciente" },
   { bad: "Publican contenido", good: "Diseñamos campañas de conversión" },
-  { bad: "Te cambian el community manager", good: "Agente IA que atiende 24/7" },
+  { bad: "Recepcionistas colapsadas respondiendo WhatsApps", good: "IA que filtra curiosos y agenda pacientes 24/7" },
   { bad: "Métricas de vanidad", good: "Retorno sobre inversión real" },
 ];
 
