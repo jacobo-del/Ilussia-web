@@ -61,69 +61,19 @@ export default function Vsl() {
             justifyContent: "center",
           }}
         >
-          {/*
-           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-           INSERTAR VIDEO DE YOUTUBE AQUÍ
-           Reemplaza este bloque completo por:
-
-           <iframe
-             src="https://www.youtube.com/embed/TU_VIDEO_ID"
-             title="Ilussia Agency — Sistema en acción"
-             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-             allowFullScreen
-             style={{
-               position: "absolute", inset: 0,
-               width: "100%", height: "100%",
-               border: "none"
-             }}
-           />
-
-           ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-          */}
-          <div
+          <iframe
+            src="https://www.youtube.com/embed/m9KxE3dBadw"
+            title="Ilussia Agency — Sistema en acción"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
             style={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "center",
-              gap: "1rem",
-              padding: "3rem 2rem",
+              position: "absolute",
+              inset: 0,
+              width: "100%",
+              height: "100%",
+              border: "none",
             }}
-          >
-            <div
-              style={{
-                width: 56,
-                height: 56,
-                borderRadius: "50%",
-                border: "1px solid rgba(201,168,76,0.3)",
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-                color: "rgba(201,168,76,0.4)",
-                fontSize: "1.2rem",
-              }}
-            >
-              ▶
-            </div>
-            <p
-              style={{
-                color: "#B8BCCF",
-                fontSize: "0.95rem",
-                fontFamily: "var(--font-inter)",
-                fontWeight: 500,
-              }}
-            >
-              Video en producción — disponible esta semana
-            </p>
-            <p
-              style={{
-                color: "#555",
-                fontSize: "0.78rem",
-                fontFamily: "var(--font-inter)",
-              }}
-            >
-              Verás el sistema completo funcionando en tiempo real
-            </p>
-          </div>
+          />
         </motion.div>
       </div>
     </section>
