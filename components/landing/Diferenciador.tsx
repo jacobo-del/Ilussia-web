@@ -20,7 +20,7 @@ export default function Diferenciador() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           style={{
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-cormorant)",
             fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
             fontWeight: 400,
             color: "#fff",
@@ -33,7 +33,7 @@ export default function Diferenciador() {
 
         <div
           style={{
-            border: "1px solid rgba(201,168,76,0.2)",
+            border: "1px solid rgba(255,255,255,0.14)",
             borderRadius: "8px",
             overflow: "hidden",
           }}
@@ -44,7 +44,7 @@ export default function Diferenciador() {
               display: "grid",
               gridTemplateColumns: "1fr 1fr",
               background: "#111538",
-              borderBottom: "1px solid rgba(201,168,76,0.2)",
+              borderBottom: "1px solid rgba(255,255,255,0.14)",
             }}
           >
             <div
@@ -55,7 +55,7 @@ export default function Diferenciador() {
                 fontSize: "0.75rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               Otras agencias
@@ -63,13 +63,13 @@ export default function Diferenciador() {
             <div
               style={{
                 padding: "1rem 1.5rem",
-                color: "#C9A84C",
+                color: "#FFFFFF",
                 fontWeight: 600,
                 fontSize: "0.75rem",
                 textTransform: "uppercase",
                 letterSpacing: "0.1em",
-                borderLeft: "1px solid rgba(201,168,76,0.2)",
-                fontFamily: "var(--font-inter)",
+                borderLeft: "1px solid rgba(255,255,255,0.14)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               Ilussia
@@ -100,7 +100,7 @@ export default function Diferenciador() {
                   gap: "0.75rem",
                   color: "#555",
                   fontSize: "0.9rem",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                 }}
               >
                 <span style={{ color: "#333", fontSize: "1rem", flexShrink: 0 }}>
@@ -116,11 +116,11 @@ export default function Diferenciador() {
                   gap: "0.75rem",
                   color: "#d0d0d0",
                   fontSize: "0.9rem",
-                  borderLeft: "1px solid rgba(201,168,76,0.15)",
-                  fontFamily: "var(--font-inter)",
+                  borderLeft: "1px solid rgba(255,255,255,0.1)",
+                  fontFamily: "var(--font-dm-sans)",
                 }}
               >
-                <span style={{ color: "#C9A84C", fontSize: "1rem", flexShrink: 0 }}>
+                <span style={{ color: "#FFFFFF", fontSize: "1rem", flexShrink: 0 }}>
                   ✓
                 </span>
                 {row.good}

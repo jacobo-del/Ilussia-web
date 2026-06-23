@@ -27,7 +27,7 @@ export default function Problema() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           style={{
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-cormorant)",
             fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
             fontWeight: 400,
             color: "#fff",
@@ -54,7 +54,7 @@ export default function Problema() {
               transition={{ duration: 0.5, delay: i * 0.12 }}
               style={{
                 background: "#0B0F2C",
-                border: "1px solid rgba(201,168,76,0.2)",
+                border: "1px solid rgba(255,255,255,0.14)",
                 borderRadius: "8px",
                 padding: "2rem",
               }}
@@ -65,7 +65,7 @@ export default function Problema() {
                   color: "#B8BCCF",
                   lineHeight: 1.75,
                   fontSize: "0.95rem",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                 }}
               >
                 {c.text}
@@ -81,11 +81,11 @@ export default function Problema() {
           transition={{ delay: 0.5 }}
           style={{
             textAlign: "center",
-            color: "#C9A84C",
+            color: "#FFFFFF",
             fontStyle: "italic",
             fontSize: "1rem",
             marginTop: "3rem",
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-cormorant)",
           }}
         >
           Si reconociste al menos una, tu clínica está dejando pacientes ir.

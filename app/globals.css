@@ -1,18 +1,18 @@
 @import "tailwindcss";
 
 :root {
-  --gold: #C9A84C;
-  --gold-dim: rgba(201, 168, 76, 0.12);
-  --gold-border: rgba(201, 168, 76, 0.22);
+  --accent: #FFFFFF;
+  --accent-dim: rgba(255, 255, 255, 0.07);
+  --accent-border: rgba(255, 255, 255, 0.14);
   --bg: #070A20;
   --surface: #0B0F2C;
   --surface-2: #111538;
-  --text-muted: #B8BCCF;
+  --text-muted: #C0C4D8;
 }
 
 @theme inline {
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-playfair);
+  --font-sans: var(--font-dm-sans);
+  --font-display: var(--font-cormorant);
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -22,7 +22,7 @@ html { scroll-behavior: smooth; }
 body {
   background: #070A20;
   color: #ffffff;
-  font-family: var(--font-inter), system-ui, sans-serif;
+  font-family: var(--font-dm-sans), system-ui, sans-serif;
   font-size: 16px;
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -32,7 +32,7 @@ body {
 ::-webkit-scrollbar { width: 6px; }
 ::-webkit-scrollbar-track { background: #070A20; }
 ::-webkit-scrollbar-thumb { background: #1a2060; border-radius: 3px; }
-::-webkit-scrollbar-thumb:hover { background: #C9A84C; }
+::-webkit-scrollbar-thumb:hover { background: rgba(255,255,255,0.4); }
 
 .section-pad {
   padding-top: 120px;

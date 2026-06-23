@@ -36,7 +36,7 @@ export default function Navbar() {
         backdropFilter: scrolled ? "blur(12px)" : "none",
         WebkitBackdropFilter: scrolled ? "blur(12px)" : "none",
         borderBottom: scrolled
-          ? "1px solid rgba(201,168,76,0.1)"
+          ? "1px solid rgba(255,255,255,0.06)"
           : "1px solid transparent",
       }}
     >
@@ -92,7 +92,7 @@ export default function Navbar() {
                 background: "none",
                 border: "none",
                 cursor: "pointer",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
@@ -108,7 +108,7 @@ export default function Navbar() {
           <button
             onClick={() => scrollTo("formulario")}
             style={{
-              background: "#C9A84C",
+              background: "#FFFFFF",
               color: "#070A20",
               padding: "0.5rem 1.25rem",
               borderRadius: "4px",
@@ -116,7 +116,7 @@ export default function Navbar() {
               fontSize: "0.875rem",
               border: "none",
               cursor: "pointer",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
               transition: "opacity 0.2s",
             }}
             onMouseEnter={(e) =>
@@ -152,7 +152,7 @@ export default function Navbar() {
                 display: "block",
                 width: 22,
                 height: 2,
-                background: open ? "#C9A84C" : "#fff",
+                background: open ? "#FFFFFF" : "#fff",
                 transition: "background 0.2s",
               }}
             />
@@ -165,7 +165,7 @@ export default function Navbar() {
         <div
           style={{
             background: "#0B0F2C",
-            borderTop: "1px solid rgba(201,168,76,0.15)",
+            borderTop: "1px solid rgba(255,255,255,0.1)",
             padding: "1rem 1.5rem 1.5rem",
           }}
         >
@@ -187,7 +187,7 @@ export default function Navbar() {
                 borderBottom: "1px solid rgba(255,255,255,0.05)",
                 cursor: "pointer",
                 fontSize: "0.95rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               {l.label}
@@ -200,7 +200,7 @@ export default function Navbar() {
             }}
             style={{
               width: "100%",
-              background: "#C9A84C",
+              background: "#FFFFFF",
               color: "#070A20",
               padding: "0.75rem",
               borderRadius: "4px",
@@ -209,7 +209,7 @@ export default function Navbar() {
               border: "none",
               cursor: "pointer",
               marginTop: "1rem",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
             }}
           >
             Auditoría gratuita

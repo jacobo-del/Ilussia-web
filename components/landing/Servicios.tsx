@@ -8,47 +8,44 @@ const scrollTo = (id: string) =>
 const plans = [
   {
     name: "Sistema Base",
-    setup: "Q3,000",
-    monthly: "Q4,000/mes",
+    tagline: "Para clínicas que quieren comenzar a escalar con control",
     featured: false,
     features: [
-      "Gestión Meta Ads",
-      "CRM con captura automática de leads",
-      "Pipeline de seguimiento",
-      "Membresía y mantenimiento CRM",
+      "Gestión completa de Meta Ads",
+      "CRM con captura automática de pacientes",
+      "Pipeline de seguimiento de leads",
+      "Membresía y mantenimiento del CRM",
       "Reporte mensual de resultados",
     ],
-    cta: "Comenzar con Sistema Base",
+    cta: "Solicitar información",
   },
   {
     name: "Sistema de Crecimiento",
-    badge: "Más popular",
-    setup: "Q4,000",
-    monthly: "Q5,800/mes",
+    tagline: "Para clínicas establecidas que quieren llenar su agenda",
+    badge: "Más solicitado",
     featured: true,
     features: [
       "Meta Ads estrategia B2B + B2C",
       "CRM completo con pipeline y trazabilidad",
       "WhatsApp Business API integrado",
       "Agente conversacional IA 24/7",
-      "Automatizaciones de seguimiento post-lead",
-      "Reportes quincenales",
+      "Automatizaciones de seguimiento post-consulta",
+      "Reportes quincenales detallados",
     ],
-    cta: "Quiero el Sistema de Crecimiento",
+    cta: "Solicitar información",
   },
   {
     name: "Sistema Completo",
-    setup: "Q7,000",
-    monthly: "Q8,500/mes",
+    tagline: "Para clínicas premium que dominan todos sus canales",
     featured: false,
     features: [
-      "Todo lo de Máquina de Crecimiento",
+      "Todo lo del Sistema de Crecimiento",
       "Google Ads: Search + Display + Maps",
-      "TikTok Ads",
+      "TikTok Ads para captación de pacientes",
       "Google Shopping",
-      "Reporte unificado Meta + Google",
+      "Reporte unificado multi-canal",
     ],
-    cta: "Hablar sobre Sistema Completo",
+    cta: "Solicitar información",
   },
 ];
 
@@ -63,53 +60,67 @@ export default function Servicios() {
           transition={{ duration: 0.6 }}
           style={{ textAlign: "center", marginBottom: "3.5rem" }}
         >
-          {/* Launch offer banner */}
           <div
             style={{
               display: "inline-flex",
               alignItems: "center",
               gap: "0.5rem",
-              background: "rgba(201,168,76,0.1)",
-              border: "1px solid rgba(201,168,76,0.35)",
+              background: "rgba(255,255,255,0.06)",
+              border: "1px solid rgba(255,255,255,0.18)",
               borderRadius: 999,
               padding: "0.4rem 1.1rem",
               marginBottom: "1.25rem",
             }}
           >
-            <span style={{ fontSize: "0.75rem" }}>🚀</span>
+            <span style={{ fontSize: "0.75rem" }}>✦</span>
             <span
               style={{
-                color: "#C9A84C",
-                fontSize: "0.78rem",
-                fontWeight: 700,
-                fontFamily: "var(--font-inter)",
-                letterSpacing: "0.06em",
+                color: "#FFFFFF",
+                fontSize: "0.75rem",
+                fontWeight: 600,
+                fontFamily: "var(--font-dm-sans)",
+                letterSpacing: "0.1em",
                 textTransform: "uppercase",
               }}
             >
-              Oferta de lanzamiento · Solo primeros clientes
+              Oferta de lanzamiento · Setup gratuito
             </span>
           </div>
 
           <h2
             style={{
-              fontFamily: "var(--font-playfair)",
-              fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
+              fontFamily: "var(--font-cormorant)",
+              fontStyle: "italic",
+              fontSize: "clamp(2rem, 3.5vw, 2.75rem)",
               fontWeight: 400,
               color: "#fff",
-              marginBottom: "0.5rem",
+              marginBottom: "0.75rem",
             }}
           >
-            Elige el sistema que necesitas
+            Elige el sistema para tu clínica
           </h2>
           <p
             style={{
-              color: "#B8BCCF",
-              fontFamily: "var(--font-inter)",
+              color: "#C0C4D8",
+              fontFamily: "var(--font-dm-sans)",
               fontSize: "0.95rem",
             }}
           >
-            IVA incluido. Sin costos ocultos.
+            Precios personalizados según tu clínica.{" "}
+            <button
+              onClick={() => scrollTo("formulario")}
+              style={{
+                color: "#fff",
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                textDecoration: "underline",
+                fontFamily: "var(--font-dm-sans)",
+                fontSize: "0.95rem",
+              }}
+            >
+              Solicita tu propuesta sin compromiso.
+            </button>
           </p>
         </motion.div>
 
@@ -128,12 +139,12 @@ export default function Servicios() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: i * 0.12 }}
-              whileHover={{ y: -6, boxShadow: "0 8px 40px rgba(201,168,76,0.12)" }}
+              whileHover={{ y: -6 }}
               style={{
                 background: plan.featured ? "#111538" : "#0B0F2C",
                 border: plan.featured
-                  ? "1px solid #C9A84C"
-                  : "1px solid rgba(201,168,76,0.18)",
+                  ? "1px solid rgba(255,255,255,0.35)"
+                  : "1px solid rgba(255,255,255,0.1)",
                 borderRadius: "8px",
                 padding: "2rem",
                 position: "relative",
@@ -147,15 +158,16 @@ export default function Servicios() {
                     top: -12,
                     left: "50%",
                     transform: "translateX(-50%)",
-                    background: "#C9A84C",
+                    background: "#FFFFFF",
                     color: "#070A20",
-                    fontSize: "0.72rem",
+                    fontSize: "0.7rem",
                     fontWeight: 700,
                     padding: "0.25rem 0.9rem",
                     borderRadius: 999,
                     whiteSpace: "nowrap",
-                    fontFamily: "var(--font-inter)",
-                    letterSpacing: "0.05em",
+                    fontFamily: "var(--font-dm-sans)",
+                    letterSpacing: "0.06em",
+                    textTransform: "uppercase",
                   }}
                 >
                   {plan.badge}
@@ -164,52 +176,28 @@ export default function Servicios() {
 
               <h3
                 style={{
-                  fontFamily: "var(--font-playfair)",
-                  fontSize: "1.25rem",
+                  fontFamily: "var(--font-cormorant)",
+                  fontStyle: "italic",
+                  fontSize: "1.5rem",
                   color: "#fff",
-                  marginBottom: "1rem",
+                  marginBottom: "0.5rem",
                   fontWeight: 400,
                 }}
               >
                 {plan.name}
               </h3>
 
-              <div style={{ marginBottom: "1.75rem" }}>
-                <p
-                  style={{
-                    fontSize: "0.8rem",
-                    fontFamily: "var(--font-inter)",
-                    marginBottom: "0.25rem",
-                    display: "flex",
-                    alignItems: "center",
-                    gap: "0.4rem",
-                  }}
-                >
-                  <span style={{ color: "#555" }}>Setup:</span>
-                  <s style={{ color: "#444" }}>{plan.setup}</s>
-                  <span
-                    style={{
-                      color: "#22c55e",
-                      fontWeight: 700,
-                      fontSize: "0.78rem",
-                      letterSpacing: "0.04em",
-                    }}
-                  >
-                    GRATIS
-                  </span>
-                </p>
-                <p
-                  style={{
-                    color: "#C9A84C",
-                    fontSize: "1.8rem",
-                    fontWeight: 700,
-                    fontFamily: "var(--font-inter)",
-                    lineHeight: 1.1,
-                  }}
-                >
-                  {plan.monthly}
-                </p>
-              </div>
+              <p
+                style={{
+                  color: "#8890B0",
+                  fontSize: "0.82rem",
+                  fontFamily: "var(--font-dm-sans)",
+                  lineHeight: 1.5,
+                  marginBottom: "1.75rem",
+                }}
+              >
+                {plan.tagline}
+              </p>
 
               <ul
                 style={{
@@ -228,19 +216,13 @@ export default function Servicios() {
                       display: "flex",
                       alignItems: "flex-start",
                       gap: "0.6rem",
-                      color: "#B8BCCF",
+                      color: "#C0C4D8",
                       fontSize: "0.875rem",
-                      fontFamily: "var(--font-inter)",
+                      fontFamily: "var(--font-dm-sans)",
                       lineHeight: 1.5,
                     }}
                   >
-                    <span
-                      style={{
-                        color: "#C9A84C",
-                        marginTop: 2,
-                        flexShrink: 0,
-                      }}
-                    >
+                    <span style={{ color: "#FFFFFF", marginTop: 2, flexShrink: 0, opacity: 0.6 }}>
                       ✓
                     </span>
                     {f}
@@ -252,21 +234,22 @@ export default function Servicios() {
                 onClick={() => scrollTo("formulario")}
                 style={{
                   width: "100%",
-                  background: plan.featured ? "#C9A84C" : "transparent",
-                  color: plan.featured ? "#070A20" : "#C9A84C",
+                  background: plan.featured ? "#FFFFFF" : "transparent",
+                  color: plan.featured ? "#070A20" : "#FFFFFF",
                   border: plan.featured
                     ? "none"
-                    : "1px solid rgba(201,168,76,0.4)",
+                    : "1px solid rgba(255,255,255,0.25)",
                   borderRadius: "4px",
                   padding: "0.875rem",
-                  fontWeight: 700,
+                  fontWeight: 600,
                   fontSize: "0.875rem",
                   cursor: "pointer",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                   transition: "opacity 0.2s",
+                  letterSpacing: "0.02em",
                 }}
                 onMouseEnter={(e) =>
-                  ((e.currentTarget as HTMLElement).style.opacity = "0.85")
+                  ((e.currentTarget as HTMLElement).style.opacity = "0.8")
                 }
                 onMouseLeave={(e) =>
                   ((e.currentTarget as HTMLElement).style.opacity = "1")
@@ -278,47 +261,21 @@ export default function Servicios() {
           ))}
         </div>
 
-        <motion.div
+        <motion.p
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.5 }}
-          style={{ textAlign: "center", marginTop: "2rem" }}
+          style={{
+            textAlign: "center",
+            color: "#555",
+            fontSize: "0.75rem",
+            marginTop: "2rem",
+            fontFamily: "var(--font-dm-sans)",
+          }}
         >
-          <p
-            style={{
-              color: "#B8BCCF",
-              fontSize: "0.875rem",
-              fontFamily: "var(--font-inter)",
-              marginBottom: "0.5rem",
-            }}
-          >
-            ¿No sabes cuál elegir?{" "}
-            <button
-              onClick={() => scrollTo("formulario")}
-              style={{
-                color: "#C9A84C",
-                background: "none",
-                border: "none",
-                cursor: "pointer",
-                textDecoration: "underline",
-                fontFamily: "var(--font-inter)",
-                fontSize: "0.875rem",
-              }}
-            >
-              La auditoría gratuita te lo dirá.
-            </button>
-          </p>
-          <p
-            style={{
-              color: "#555",
-              fontSize: "0.75rem",
-              fontFamily: "var(--font-inter)",
-            }}
-          >
-            * Setup gratuito disponible por tiempo limitado para los primeros clientes. Precio habitual de setup aplica una vez finalizado el periodo de lanzamiento.
-          </p>
-        </motion.div>
+          * Setup gratuito por tiempo limitado para los primeros clientes de lanzamiento.
+        </motion.p>
       </div>
     </section>
   );

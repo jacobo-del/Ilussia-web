@@ -98,13 +98,13 @@ export default function Formulario() {
     border: `1px solid ${
       errors[field] && touched[field]
         ? "#ef4444"
-        : "rgba(201,168,76,0.2)"
+        : "rgba(255,255,255,0.14)"
     }`,
     borderRadius: "4px",
     padding: "0.85rem 1rem",
     color: "#fff",
     fontSize: "0.9rem",
-    fontFamily: "var(--font-inter)",
+    fontFamily: "var(--font-dm-sans)",
     outline: "none",
     boxSizing: "border-box",
     transition: "border-color 0.2s",
@@ -115,7 +115,7 @@ export default function Formulario() {
     color: "#B8BCCF",
     fontSize: "0.8rem",
     marginBottom: "0.4rem",
-    fontFamily: "var(--font-inter)",
+    fontFamily: "var(--font-dm-sans)",
     letterSpacing: "0.03em",
   };
 
@@ -123,7 +123,7 @@ export default function Formulario() {
     color: "#ef4444",
     fontSize: "0.75rem",
     marginTop: "0.3rem",
-    fontFamily: "var(--font-inter)",
+    fontFamily: "var(--font-dm-sans)",
   };
 
   const isValid = Object.keys(validate(form)).length === 0;
@@ -140,7 +140,7 @@ export default function Formulario() {
         <div style={{ textAlign: "center", marginBottom: "3rem" }}>
           <h2
             style={{
-              fontFamily: "var(--font-playfair)",
+              fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
               fontWeight: 400,
               color: "#fff",
@@ -152,7 +152,7 @@ export default function Formulario() {
           <p
             style={{
               color: "#B8BCCF",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
               fontSize: "0.95rem",
               lineHeight: 1.7,
             }}
@@ -165,7 +165,7 @@ export default function Formulario() {
         <div
           style={{
             background: "#111538",
-            border: "1px solid rgba(201,168,76,0.2)",
+            border: "1px solid rgba(255,255,255,0.14)",
             borderRadius: "8px",
             padding: "2.5rem",
           }}
@@ -196,7 +196,7 @@ export default function Formulario() {
               <h3
                 style={{
                   color: "#22c55e",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                   fontSize: "1.05rem",
                   fontWeight: 600,
                   marginBottom: "0.75rem",
@@ -207,7 +207,7 @@ export default function Formulario() {
               <p
                 style={{
                   color: "#B8BCCF",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                   fontSize: "0.9rem",
                   lineHeight: 1.7,
                 }}
@@ -220,7 +220,7 @@ export default function Formulario() {
                   )}`}
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ color: "#C9A84C" }}
+                  style={{ color: "#FFFFFF" }}
                 >
                   haz clic aquí
                 </a>
@@ -363,7 +363,7 @@ export default function Formulario() {
                 disabled={loading}
                 style={{
                   width: "100%",
-                  background: isValid ? "#C9A84C" : "rgba(201,168,76,0.25)",
+                  background: isValid ? "#FFFFFF" : "rgba(201,168,76,0.25)",
                   color: isValid ? "#070A20" : "#666",
                   border: "none",
                   borderRadius: "4px",
@@ -371,7 +371,7 @@ export default function Formulario() {
                   fontWeight: 700,
                   fontSize: "0.95rem",
                   cursor: loading || !isValid ? "not-allowed" : "pointer",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "center",
@@ -406,7 +406,7 @@ export default function Formulario() {
                   color: "#555",
                   fontSize: "0.75rem",
                   marginTop: "1rem",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                 }}
               >
                 Sin spam. Tus datos son privados y no se comparten.

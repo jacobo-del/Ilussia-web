@@ -40,7 +40,7 @@ export default function FloatingCta() {
       <button
         onClick={scrollToForm}
         style={{
-          background: "#C9A84C",
+          background: "#FFFFFF",
           color: "#070A20",
           border: "none",
           borderRadius: "999px",
@@ -48,8 +48,8 @@ export default function FloatingCta() {
           fontWeight: 700,
           fontSize: "0.875rem",
           cursor: "pointer",
-          fontFamily: "var(--font-inter)",
-          boxShadow: "0 4px 24px rgba(201,168,76,0.4)",
+          fontFamily: "var(--font-dm-sans)",
+          boxShadow: "0 4px 24px rgba(255,255,255,0.25)",
           whiteSpace: "nowrap",
           letterSpacing: "0.02em",
         }}

@@ -33,7 +33,7 @@ export default function ComoFunciona() {
         >
           <h2
             style={{
-              fontFamily: "var(--font-playfair)",
+              fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
               fontWeight: 400,
               color: "#fff",
@@ -46,7 +46,7 @@ export default function ComoFunciona() {
             style={{
               color: "#B8BCCF",
               fontSize: "1rem",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
             }}
           >
             En menos de 2 semanas, tu clínica tiene el sistema activo
@@ -66,7 +66,7 @@ export default function ComoFunciona() {
               left: "calc(16.66% + 28px)",
               right: "calc(16.66% + 28px)",
               height: 2,
-              background: "#C9A84C",
+              background: "#FFFFFF",
               transformOrigin: "left",
               opacity: 0.5,
             }}
@@ -92,15 +92,15 @@ export default function ComoFunciona() {
                     width: 56,
                     height: 56,
                     borderRadius: "50%",
-                    border: "2px solid #C9A84C",
+                    border: "2px solid #FFFFFF",
                     background: "#070A20",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     margin: "0 auto 1.5rem",
-                    fontFamily: "var(--font-playfair)",
+                    fontFamily: "var(--font-cormorant)",
                     fontSize: "1.1rem",
-                    color: "#C9A84C",
+                    color: "#FFFFFF",
                     fontWeight: 600,
                     position: "relative",
                     zIndex: 1,
@@ -114,7 +114,7 @@ export default function ComoFunciona() {
                     fontWeight: 600,
                     fontSize: "1.05rem",
                     marginBottom: "0.75rem",
-                    fontFamily: "var(--font-inter)",
+                    fontFamily: "var(--font-dm-sans)",
                   }}
                 >
                   {s.title}
@@ -124,7 +124,7 @@ export default function ComoFunciona() {
                     color: "#B8BCCF",
                     fontSize: "0.9rem",
                     lineHeight: 1.7,
-                    fontFamily: "var(--font-inter)",
+                    fontFamily: "var(--font-dm-sans)",
                   }}
                 >
                   {s.desc}
@@ -161,15 +161,15 @@ export default function ComoFunciona() {
                     width: 48,
                     height: 48,
                     borderRadius: "50%",
-                    border: "2px solid #C9A84C",
+                    border: "2px solid #FFFFFF",
                     background: "#070A20",
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "center",
                     flexShrink: 0,
-                    fontFamily: "var(--font-playfair)",
+                    fontFamily: "var(--font-cormorant)",
                     fontSize: "0.95rem",
-                    color: "#C9A84C",
+                    color: "#FFFFFF",
                     fontWeight: 600,
                   }}
                 >
@@ -180,7 +180,7 @@ export default function ComoFunciona() {
                     style={{
                       width: 2,
                       flex: 1,
-                      background: "rgba(201,168,76,0.3)",
+                      background: "rgba(255,255,255,0.2)",
                       marginTop: "0.5rem",
                     }}
                   />
@@ -193,7 +193,7 @@ export default function ComoFunciona() {
                     fontWeight: 600,
                     fontSize: "1rem",
                     marginBottom: "0.5rem",
-                    fontFamily: "var(--font-inter)",
+                    fontFamily: "var(--font-dm-sans)",
                   }}
                 >
                   {s.title}
@@ -203,7 +203,7 @@ export default function ComoFunciona() {
                     color: "#B8BCCF",
                     fontSize: "0.875rem",
                     lineHeight: 1.7,
-                    fontFamily: "var(--font-inter)",
+                    fontFamily: "var(--font-dm-sans)",
                   }}
                 >
                   {s.desc}

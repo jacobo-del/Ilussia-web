@@ -38,7 +38,7 @@ export default function Faq() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           style={{
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-cormorant)",
             fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
             fontWeight: 400,
             color: "#fff",
@@ -60,7 +60,7 @@ export default function Faq() {
               style={{
                 borderBottom: "1px solid rgba(255,255,255,0.07)",
                 borderLeft: openIdx === i
-                  ? "2px solid #C9A84C"
+                  ? "2px solid #FFFFFF"
                   : "2px solid transparent",
                 transition: "border-color 0.3s",
               }}
@@ -85,7 +85,7 @@ export default function Faq() {
                     color: openIdx === i ? "#fff" : "#d0d0d0",
                     fontSize: "0.95rem",
                     fontWeight: openIdx === i ? 500 : 400,
-                    fontFamily: "var(--font-inter)",
+                    fontFamily: "var(--font-dm-sans)",
                     transition: "color 0.2s",
                     lineHeight: 1.5,
                   }}
@@ -94,7 +94,7 @@ export default function Faq() {
                 </span>
                 <span
                   style={{
-                    color: "#C9A84C",
+                    color: "#FFFFFF",
                     fontSize: "1.2rem",
                     flexShrink: 0,
                     display: "inline-block",
@@ -122,7 +122,7 @@ export default function Faq() {
                         color: "#B8BCCF",
                         fontSize: "0.9rem",
                         lineHeight: 1.75,
-                        fontFamily: "var(--font-inter)",
+                        fontFamily: "var(--font-dm-sans)",
                       }}
                     >
                       {faq.a}

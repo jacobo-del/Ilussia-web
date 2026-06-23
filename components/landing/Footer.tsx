@@ -16,7 +16,7 @@ export default function Footer() {
     <footer
       style={{
         background: "#070A20",
-        borderTop: "1px solid rgba(201,168,76,0.12)",
+        borderTop: "1px solid rgba(255,255,255,0.07)",
         padding: "3.5rem 1.5rem 2rem",
       }}
     >
@@ -34,7 +34,7 @@ export default function Footer() {
           <div style={{ maxWidth: 320 }}>
             <p
               style={{
-                fontFamily: "var(--font-playfair)",
+                fontFamily: "var(--font-cormorant)",
                 fontSize: "1.4rem",
                 color: "#fff",
                 marginBottom: "0.75rem",
@@ -48,7 +48,7 @@ export default function Footer() {
                 color: "#555",
                 fontSize: "0.85rem",
                 lineHeight: 1.75,
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               Performance marketing en Latinoamérica. Meta Ads, CRM y agentes IA
@@ -66,7 +66,7 @@ export default function Footer() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 marginBottom: "1rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               Navegación
@@ -91,12 +91,12 @@ export default function Footer() {
                       cursor: "pointer",
                       color: "#555",
                       fontSize: "0.875rem",
-                      fontFamily: "var(--font-inter)",
+                      fontFamily: "var(--font-dm-sans)",
                       padding: 0,
                       transition: "color 0.2s",
                     }}
                     onMouseEnter={(e) =>
-                      ((e.currentTarget as HTMLElement).style.color = "#C9A84C")
+                      ((e.currentTarget as HTMLElement).style.color = "#FFFFFF")
                     }
                     onMouseLeave={(e) =>
                       ((e.currentTarget as HTMLElement).style.color = "#555")
@@ -119,7 +119,7 @@ export default function Footer() {
                 letterSpacing: "0.1em",
                 textTransform: "uppercase",
                 marginBottom: "1rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               Contacto
@@ -129,14 +129,14 @@ export default function Footer() {
               style={{
                 color: "#555",
                 fontSize: "0.875rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
                 textDecoration: "none",
                 display: "block",
                 marginBottom: "0.5rem",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
-                ((e.currentTarget as HTMLElement).style.color = "#C9A84C")
+                ((e.currentTarget as HTMLElement).style.color = "#FFFFFF")
               }
               onMouseLeave={(e) =>
                 ((e.currentTarget as HTMLElement).style.color = "#555")
@@ -148,7 +148,7 @@ export default function Footer() {
               style={{
                 color: "#555",
                 fontSize: "0.875rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
               }}
             >
               Latinoamérica
@@ -171,7 +171,7 @@ export default function Footer() {
             style={{
               color: "#444",
               fontSize: "0.78rem",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
             }}
           >
             © {new Date().getFullYear()} Ilussia Agency. Todos los derechos reservados.
@@ -182,12 +182,12 @@ export default function Footer() {
               style={{
                 color: "#444",
                 fontSize: "0.78rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
                 textDecoration: "none",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
-                ((e.currentTarget as HTMLElement).style.color = "#C9A84C")
+                ((e.currentTarget as HTMLElement).style.color = "#FFFFFF")
               }
               onMouseLeave={(e) =>
                 ((e.currentTarget as HTMLElement).style.color = "#444")
@@ -200,12 +200,12 @@ export default function Footer() {
               style={{
                 color: "#444",
                 fontSize: "0.78rem",
-                fontFamily: "var(--font-inter)",
+                fontFamily: "var(--font-dm-sans)",
                 textDecoration: "none",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) =>
-                ((e.currentTarget as HTMLElement).style.color = "#C9A84C")
+                ((e.currentTarget as HTMLElement).style.color = "#FFFFFF")
               }
               onMouseLeave={(e) =>
                 ((e.currentTarget as HTMLElement).style.color = "#444")

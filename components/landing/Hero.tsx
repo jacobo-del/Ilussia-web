@@ -20,7 +20,7 @@ export default function Hero() {
       {/* Background image */}
       {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
-        src="https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=1600&q=75"
+        src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1600&q=80"
         alt=""
         aria-hidden
         style={{
@@ -30,7 +30,7 @@ export default function Hero() {
           height: "100%",
           objectFit: "cover",
           objectPosition: "center",
-          opacity: 0.12,
+          opacity: 0.22,
         }}
       />
       <div
@@ -38,7 +38,7 @@ export default function Hero() {
           position: "absolute",
           inset: 0,
           background:
-            "linear-gradient(to right, #070A20 55%, rgba(10,10,10,0.5) 100%)",
+            "linear-gradient(to right, #070A20 50%, rgba(7,10,32,0.6) 100%)",
         }}
       />
 
@@ -57,12 +57,12 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           style={{
-            color: "#C9A84C",
+            color: "#FFFFFF",
             fontSize: "0.75rem",
             letterSpacing: "0.22em",
             textTransform: "uppercase",
             marginBottom: "1.75rem",
-            fontFamily: "var(--font-inter)",
+            fontFamily: "var(--font-dm-sans)",
           }}
         >
           Performance Marketing · Latinoamérica
@@ -73,7 +73,7 @@ export default function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.1 }}
           style={{
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-cormorant)",
             fontStyle: "italic",
             fontSize: "clamp(2.8rem, 5.5vw, 4.25rem)",
             lineHeight: 1.12,
@@ -86,7 +86,7 @@ export default function Hero() {
           Sistemas de Adquisición
           <br />para Clínicas y Centros
           <br />Estéticos{" "}
-          <span style={{ color: "#C9A84C" }}>Premium.</span>
+          <span style={{ color: "#FFFFFF" }}>Premium.</span>
         </motion.h1>
 
         <motion.p
@@ -99,7 +99,7 @@ export default function Hero() {
             lineHeight: 1.7,
             marginBottom: "2.5rem",
             maxWidth: 480,
-            fontFamily: "var(--font-inter)",
+            fontFamily: "var(--font-dm-sans)",
           }}
         >
           Deja de perder tiempo con leads curiosos. Llenamos tu agenda con
@@ -120,7 +120,7 @@ export default function Hero() {
           <button
             onClick={() => scrollTo("formulario")}
             style={{
-              background: "#C9A84C",
+              background: "#FFFFFF",
               color: "#070A20",
               padding: "0.9rem 2rem",
               borderRadius: "4px",
@@ -128,7 +128,7 @@ export default function Hero() {
               fontSize: "1rem",
               border: "none",
               cursor: "pointer",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
               transition: "opacity 0.2s",
             }}
             onMouseEnter={(e) =>
@@ -151,7 +151,7 @@ export default function Hero() {
               fontSize: "1rem",
               border: "1px solid rgba(255,255,255,0.2)",
               cursor: "pointer",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
               transition: "border-color 0.2s",
             }}
             onMouseEnter={(e) =>
@@ -174,7 +174,7 @@ export default function Hero() {
           style={{
             color: "#555",
             fontSize: "0.85rem",
-            fontFamily: "var(--font-inter)",
+            fontFamily: "var(--font-dm-sans)",
           }}
         >
           ✓ Solo para clínicas con capacidad de inversión &nbsp;·&nbsp; ✓ Sin contrato anual

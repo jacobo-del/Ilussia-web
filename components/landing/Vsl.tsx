@@ -21,7 +21,7 @@ export default function Vsl() {
         >
           <h2
             style={{
-              fontFamily: "var(--font-playfair)",
+              fontFamily: "var(--font-cormorant)",
               fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
               fontWeight: 400,
               color: "#fff",
@@ -35,7 +35,7 @@ export default function Vsl() {
               color: "#B8BCCF",
               fontSize: "1rem",
               marginBottom: "2.5rem",
-              fontFamily: "var(--font-inter)",
+              fontFamily: "var(--font-dm-sans)",
             }}
           >
             2 minutos que van a cambiar cómo adquirís pacientes
@@ -54,7 +54,7 @@ export default function Vsl() {
             margin: "0 auto",
             borderRadius: "12px",
             overflow: "hidden",
-            border: "1px solid rgba(201,168,76,0.3)",
+            border: "1px solid rgba(255,255,255,0.2)",
             background: "#111538",
             display: "flex",
             alignItems: "center",

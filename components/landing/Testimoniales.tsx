@@ -38,7 +38,7 @@ export default function Testimoniales() {
           viewport={{ once: true, margin: "-80px" }}
           transition={{ duration: 0.6 }}
           style={{
-            fontFamily: "var(--font-playfair)",
+            fontFamily: "var(--font-cormorant)",
             fontSize: "clamp(1.75rem, 3vw, 2.25rem)",
             fontWeight: 400,
             color: "#fff",
@@ -65,7 +65,7 @@ export default function Testimoniales() {
               transition={{ duration: 0.5, delay: i * 0.12 }}
               style={{
                 background: "#111538",
-                border: "1px solid rgba(201,168,76,0.15)",
+                border: "1px solid rgba(255,255,255,0.1)",
                 borderRadius: "8px",
                 padding: "2rem",
                 display: "flex",
@@ -79,7 +79,7 @@ export default function Testimoniales() {
                   fontSize: "0.9rem",
                   lineHeight: 1.8,
                   fontStyle: "italic",
-                  fontFamily: "var(--font-inter)",
+                  fontFamily: "var(--font-dm-sans)",
                   flex: 1,
                 }}
               >
@@ -99,7 +99,7 @@ export default function Testimoniales() {
                   height={44}
                   style={{
                     borderRadius: "50%",
-                    border: "2px solid rgba(201,168,76,0.3)",
+                    border: "2px solid rgba(255,255,255,0.2)",
                   }}
                 />
                 <div>
@@ -108,7 +108,7 @@ export default function Testimoniales() {
                       color: "#fff",
                       fontSize: "0.875rem",
                       fontWeight: 600,
-                      fontFamily: "var(--font-inter)",
+                      fontFamily: "var(--font-dm-sans)",
                     }}
                   >
                     {t.name}
@@ -117,7 +117,7 @@ export default function Testimoniales() {
                     style={{
                       color: "#B8BCCF",
                       fontSize: "0.78rem",
-                      fontFamily: "var(--font-inter)",
+                      fontFamily: "var(--font-dm-sans)",
                     }}
                   >
                     {t.role}
@@ -134,7 +134,7 @@ export default function Testimoniales() {
             color: "#444",
             fontSize: "0.7rem",
             marginTop: "2.5rem",
-            fontFamily: "var(--font-inter)",
+            fontFamily: "var(--font-dm-sans)",
           }}
         >
           *Testimoniales representativos. Los resultados pueden variar según
