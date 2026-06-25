@@ -16,10 +16,10 @@ export default function Home() {
       <Navbar />
       <main id="inicio">
         <Hero />
+        <Vsl />
         <Problema />
         <Diferenciador />
         <ComoFunciona />
-        <Vsl />
         <Servicios />
         <Faq />
         <Formulario />
